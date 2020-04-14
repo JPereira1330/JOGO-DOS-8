@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class No implements Cloneable{
 
 	private No pai;
+	private int ultimoMovimmento;
 	private int[][] valor = new int[3][3];
 	private ArrayList<No> filhos = new ArrayList<No>();
 	
@@ -46,4 +47,11 @@ public class No implements Cloneable{
 		this.filhos = filhos;
 	}
 	
+	public int getUltimoMovimmento() {
+		return ultimoMovimmento;
+	}
+	
+	public void setUltimoMovimmento(int ultimoMovimmento) {
+		this.ultimoMovimmento = ultimoMovimmento;
+	}
 }
